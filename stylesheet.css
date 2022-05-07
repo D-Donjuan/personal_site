@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+
+
+
+/* -------------------- HEADER SECTION -> START --------------------*/
+.header{
+    min-height: 5vh;
+    width: 100%;
+    background-color: white;
+}
+.logo{
+    font-size: 1.7rem;
+}
+.logo h1{
+    padding: 8px 12px;
+    font-weight: 500;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+    margin-top: .3%;
+}
+.nav-links ul{
+    padding-right: 0%;
+}
+.nav-links ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 4px 6px;
+    margin-right: 1%;
+    position: relative;
+    width: 5%;
+    border: 1px solid black;
+    text-align:center
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+}
+/* -------------------- HEADER SECTION -> END --------------------*/
+
+
+
+
+/* -------------------- LANDING PICTURE SECTION -> START --------------------*/
+.landing-pic-section{
+    width: 100%;
+    min-height: 50vh;
+    position: relative;
+
+}
+.landing-pic{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position-y: -15rem;
+    background-image: url("./pictures/cityscape.jpeg");
+    background-size: cover;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
+.pic-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    position: absolute;
+    z-index: 0;
+}
+.about-section{
+    position: relative;
+    width:50%;
+    height: 80%;
+    color:white;
+    margin: auto;
+    padding-top: 11%;
+    text-align: center;
+    z-index: 3;
+}
+.about-section h3{
+    font-weight: 400;
+    font-size: 1.3rem;
+    letter-spacing: .13em;
+}
+/* -------------------- LANDING PICTURE SECTION -> END --------------------*/
+
+
+  /* -------------------- SHARED STYLING -> START --------------------*/
+  .content-containers{
+    display: flex;
+    height: 62vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.content-containers > div{
+    height: 100%;
+    width: 100%;
+}
+.content-text-container{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+.info-container{
+    width: 40%;
+    height: 40%;
+    margin: auto;
+    margin-top: 0;
+    text-align: center;
+    display: block;
+}
+.info-container p{
+  font-weight: 400;
+  font-size: 1.3rem;
+  letter-spacing: .13em;
+}
+.button {
+    background-color: rgba(255,255,255,1);
+    border: .125em solid rgba(27,56,63,1);
+    color:rgba(27,56,63,1);
+    font-weight: 800;
+    border-radius: 8px;
+    height: 52%;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    text-shadow: 0 0 0 .125rem;
+    text-align: center;
+    transition-duration: 0.4s;
+}
+  
+.button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+.photo-styling{
+    background-image: url("./pictures/AdobeStock_210312180.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-bottom: 0;
+}
+
+.show{
+    visibility: visible;
+}
+/* -------------------- SHARED STYLING -> START --------------------*/
+
+
+
+
+/* -------------------- PROJECTS SECTION -> START --------------------*/
+
+.projects-container{
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 5px;
+    row-gap: 5px;
+}
+.projects-container > div {
+    display: flex; 
+    flex-basis: calc(50% - 40px);  
+    justify-content: center;
+}
+.project-pic{
+    width: 100%;
+    height: 100%;
+    background-image: url("./pictures/Asus_RTX_30_series_1599036834331.webp");
+}
+.project-photo{
+    width: 27%;
+    height: 49%;
+}
+.projects{
+position: relative;
+}
+.description{
+    position: absolute;
+    visibility: hidden;
+    background-color: rgba(0,0,0,.7);
+    color: white;
+    height: 100%;
+}
+.content{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+.content > *{
+    display: flex;
+    margin: 0 auto;
+}
+.content p{
+    margin: 0 auto;
+    text-align: center;
+    margin: 3% 1% 3% 1%;
+}
+
+/* -------------------- PROJECTS SECTION -> END --------------------*/
+
+
+
+
+/* -------------------- MUSIC SECTION -> START --------------------*/
+
+.music-section
+{
+    background-color: #f5f5f5;
+}
+.music-player-container{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+
+}
+.music-player{
+    height: 80%;
+    width: 95%;
+    margin: auto;
+    overflow-y: scroll;
+    background-image: url("./pictures/tape-reel.jpeg");
+    background-position-y: -97rem;
+
+}
+.music-photo{
+    background-image: url("./pictures/tape-reel.jpeg");
+    width: 38%;
+    height: 65%;
+}
+.audio-tracks > *{
+    display: inline-block;
+    margin: auto;
+}
+.audio-tracks{
+    height: 15%;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+}
+audio{
+    display: inline-block;
+}
+
+
+/* -------------------- MUSIC SECTION -> END --------------------*/
+
+
+
+/* -------------------- CONTACT SECTION -> START --------------------*/
+
+.contact-photo{
+    background-image: url("./pictures/spaceman_pencil.jpeg");
+    margin-bottom: 0;
+    width: 38%;
+    height: 65%;
+}
+
+form{
+    height: 80%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    background-image: url("./pictures/cityscape.jpeg");
+    background-position-y: 130rem;
+    background-position-x: -34rem;
+}
+form > *{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+    font-weight: 700;
+}
+
+/* -------------------- CONTACT SECTION -> END --------------------*/
+
+
+
+/* -------------------- FOOTER SECTION -> START --------------------*/
+
+.footer{
+    height: 10vh;
+    width: 100%;
+    /* border: 1px solid black; */
+    position: relative;
+    background-color: #231f20;
+    /* background-color: rgba(17,21,28,1);
+    background-color: #213037;
+    background-color: #1e2530;
+    background-color: rgba(23,33,44,1);
+    background-color: #292841; */
+}
+.footer-pic{
+    background-position-y: 67rem;
+    /* background-image: none;
+    background-color: #292841; */
+}
+.footer-overlay{
+    background-color: rgba(0,0,0,.5);
+}
+
+/* -------------------- FOOTER SECTION -> END --------------------*/
+
+
+
